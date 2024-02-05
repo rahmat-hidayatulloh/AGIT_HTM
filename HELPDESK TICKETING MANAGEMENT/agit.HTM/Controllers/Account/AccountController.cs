@@ -43,7 +43,7 @@ namespace agit.HTM.Controllers.Account
 
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError(String.Empty, "Invalid!"+ error.Description);
+                    ModelState.AddModelError(String.Empty, "Invalid! "+ error.Description);
                 }
 
             }
