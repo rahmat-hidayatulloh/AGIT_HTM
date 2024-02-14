@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Modules\Core\Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Agit.Domain">
+      <HintPath>..\..\lib\Agit.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Agit.Mvc">
+      <HintPath>..\..\lib\Agit.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
